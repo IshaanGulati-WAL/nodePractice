@@ -22,7 +22,7 @@ const validateEmail = async (req, res, next) => {
                 error: `Email already taken.`,
             })
         } 
-        throw new Error(`invalid email.`)
+        throw new Error(`Invalid email format.`)
 
     } catch (error) {
         next(error);
